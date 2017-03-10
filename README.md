@@ -9,7 +9,7 @@ The goal was to optimize a provided website for it achieves a target PageSpeed s
 
 ###### Live
 
-Go to [https://aline-aline.github.io/frontend-nanodegree-website-optimization/](https://aline-aline.github.io/frontend-nanodegree-website-optimization/)
+Go to [https://aline-aline.github.io/frontend-nanodegree-website-optimization/](https://aline-aline.github.io/frontend-nanodegree-website-optimization/dist)
 
 ###### Locally
 
