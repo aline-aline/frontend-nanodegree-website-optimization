@@ -438,7 +438,7 @@ var resizePizzas = function(size) {
       default:
         console.log('bug in sizeSwitcher');
     }
-    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+    var randomPizzas = document.getElementsByClassName(".randomPizzaContainer");
     var randomPizzasLength = randomPizzas.length;
     for (var i = 0; i < randomPizzasLength; i++) {
       randomPizzas[i].style.width = newwidth;
@@ -496,11 +496,11 @@ function updatePositions() {
   var phase = [];
 
   for (var i = 0; i < 5; i++) {
-    phase.push(Math.sin(scrollTop / 1250) * 100);
+    phase.push(Math.sin((scrollTop / 1250) + (i % 5)));
   }
 
   for (var j = 0; j < items.length; j++) {
-    items[j].style.left = items[j].basicLeft + phase[j % 5] + 'px';
+    items[j].style.left = items[j].basicLeft + 100 * phase[j % 5] + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
